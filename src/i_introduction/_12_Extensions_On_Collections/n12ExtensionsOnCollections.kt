@@ -17,10 +17,10 @@ fun todoTask12(): Nothing = TODO(
     documentation = doc12()
 )
 
-fun List<Int>.sortedDescending(): List<Int> {
-    Collections.sort(this, { x, y -> y - x })
-    return this
-}
+//fun List<Int>.sortedDescending(): List<Int> {
+//    Collections.sort(this, { x, y -> y - x })
+//    return this
+//}
 
 fun task12(): List<Int> {
     return arrayListOf(1, 5, 2).sortedDescending()
