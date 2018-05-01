@@ -1,12 +1,17 @@
 package iii_conventions
 
-import org.junit.Assert.assertEquals
-import org.junit.Assert.assertFalse
+import org.junit.Assert.*
 import org.junit.Test
 import java.util.*
 
 class N28ForLoopKtTest {
     /* Month numbering starts with 0 (0-Jan, 1-Feb, ... 11-Dec) */
+
+    @Test fun myTest() {
+        val range = MyDate(2014, 5, 1)..MyDate(2014, 5, 20)
+        val itr = range.iterator()
+        assertTrue(itr.hasNext())
+    }
 
     @Test fun testIterateOverDateRange() {
         val actualDateRange = ArrayList<MyDate>()
